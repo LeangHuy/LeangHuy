@@ -1,8 +1,7 @@
-
 # Hi there 👋
 
 <p align="center">
-    <a href="https://github.com/chetra-seng"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=750&color=39FF14&center=true&vCenter=true&width=500&lines=Latest+Contributions;%24+sudo+apt-get+update;%24+sudo+apt-get+upgrade"></a>
+    <a href="https://github.com/LeangHuy"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=4000&pause=750&color=39FF14&center=true&vCenter=true&width=500&lines=Latest+Contributions;%24+sudo+apt-get+update;%24+sudo+apt-get+upgrade"></a>
 </p>
 
 <p align="center">
@@ -16,14 +15,14 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/chetra-seng"><img src="https://komarev.com/ghpvc/?username=chetra-seng"><a/>
+    <a href="https://github.com/LeangHuy"><img src="https://komarev.com/ghpvc/?username=LeangHuy"><a/>
 </p>
 
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=react,bootstrap,mui,html,css,vscode,github,figma,tailwind,git,r" />
-    <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,typescript,express,firebase,mongodb,c,java,nextjs,mysql,flask" /><br>
+    <img src="https://skillicons.dev/icons?i=react,bootstrap,mui,html,css,vscode,github,tailwind,git" />
+    <img src="https://skillicons.dev/icons?i=nodejs,javascript,express,firebase,mongodb,c++,java,nextjs,mysql" /><br>
 </div>
 
 <br/>
