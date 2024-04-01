@@ -15,10 +15,6 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/chetra-seng"><img src="https://komarev.com/ghpvc/?username=chetra-seng"><a/>
-</p>
-
-<p align="center">
     <a href="https://github.com/LeangHuy"><img src="https://komarev.com/ghpvc/?username=LeangHuy"><a/>
 </p>
 

@@ -6,10 +6,10 @@ name: Generate Snake
 
 on:
   schedule:
-      # every 6 hours
+    # every 6 hours
     - cron: "0 */6 * * *"
 
-# This command allows us to run the Action automatically from the Actions tab.
+  # This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
 
 # The sequence of runs in this workflow:
@@ -21,22 +21,21 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
+      # Checks repo under $GITHUB_WORKSHOP, so your job can access it
       - uses: actions/checkout@v2
 
-    # Generates the snake  
+      # Generates the snake
       - uses: Platane/snk@v3
         id: snake-gif
         with:
-          github_user_name: chetra-seng
+          github_user_name: LeangHuy
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-     # show the status of the build. Makes it easier for debugging (if there's any issues).
+      # show the status of the build. Makes it easier for debugging (if there's any issues).
       - run: git status
 
       # Push the changes
