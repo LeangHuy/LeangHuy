@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 # Updated to v2
+      - uses: actions/checkout@v3  # Update to v3
       - uses: Platane/snk@v2
         id: snake-gif
         with:
@@ -28,7 +28,7 @@ jobs:
           force: true
 
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4 # Updated to v4
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: outputs
           build_dir: dist
