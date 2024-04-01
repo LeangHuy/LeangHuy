@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3  # Update to v3
+      - uses: actions/checkout@v3
       - uses: Platane/snk@v2
         id: snake-gif
         with:
@@ -19,6 +19,9 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download external SVG file
+        run: curl -o dist/external.svg https://raw.githubusercontent.com/chetra-seng/chetra-seng/outputs/github-contribution-grid-snake.svg
 
       - name: Push changes
         uses: ad-m/github-push-action@master
