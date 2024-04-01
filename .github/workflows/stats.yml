@@ -1,0 +1,126 @@
+name: Cache GitHub Stats
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    # every 6 hours
+    - cron: "0 */6 * * *"
+
+jobs:
+  download-assets:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Download assets
+    steps:
+      - uses: actions/checkout@v3
+        name: Check out current commit
+      - uses: suisei-cn/actions-download-file@v1.3.0
+        id: stats
+        name: Download stats file
+        with:
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api?username=LeangHuy&theme=default" 
+          target: stats-dist
+          filename: stats.svg
+      - uses: actions/upload-artifact@master
+        with:
+          name: stats
+          path: stats-dist
+
+      - uses: suisei-cn/actions-download-file@v1.3.0
+        id: stats-dark
+        name: Download stats dark file
+        with:
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api?username=LeangHuy&theme=aura" 
+          target: stats-dist
+          filename: stats-dark.svg
+          
+      - uses: actions/upload-artifact@master
+        with:
+          name: stats-dark
+          path: stats-dist
+
+      - uses: suisei-cn/actions-download-file@v1.3.0
+        id: top-lang
+        name: Download top languages file
+        with:
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api/top-langs/?username=LeangHuy&hide=html,css,less,cmake,php,blade,scss,c%2B%2B&layout=compact&langs_count=6&hide_title=true&theme=default" 
+          target: stats-dist
+          filename: top-lang.svg
+          
+      - uses: actions/upload-artifact@master
+        with:
+          name: top-lang
+          path: stats-dist
+
+      - uses: suisei-cn/actions-download-file@v1.3.0
+        id: top-lang-dark
+        name: Download top languages dark file
+        with:
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api/top-langs/?username=LeangHuy&hide=html,css,less,cmake,php,blade,scss,c%2B%2B&layout=compact&langs_count=6&hide_title=true&theme=aura" 
+          target: stats-dist
+          filename: top-lang-dark.svg
+          
+      - uses: actions/upload-artifact@master
+        with:
+          name: top-lang-dark
+          path: stats-dist
+
+  push:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Push
+    needs: [download-assets]
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: stats
+          path: stats-dist
+          
+      - name: Push Stats
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: stats-outputs
+          build_dir: stats-dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - uses: actions/download-artifact@master
+        with:
+          name: stats-dark
+          path: stats-dist
+
+      - name: Push Stats Dark
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: stats-outputs
+          build_dir: stats-dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/download-artifact@master
+        with:
+          name: top-lang
+          path: stats-dist
+      
+      - name: Push Top Lang
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: stats-outputs
+          build_dir: stats-dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/download-artifact@master
+        with:
+          name: top-lang-dark
+          path: stats-dist
+      - name: Push Top Lang Dark
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: stats-outputs
+          build_dir: stats-dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
