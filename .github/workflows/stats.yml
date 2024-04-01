@@ -21,7 +21,7 @@ jobs:
         id: stats
         name: Download stats file
         with:
-          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api?username=chetra-seng&theme=default" 
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api?username=LeangHuy&theme=default" 
           target: stats-dist
           filename: stats.svg
       - uses: actions/upload-artifact@master
@@ -33,7 +33,7 @@ jobs:
         id: stats-dark
         name: Download stats dark file
         with:
-          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api?username=chetra-seng&theme=aura" 
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api?username=LeangHuy&theme=aura" 
           target: stats-dist
           filename: stats-dark.svg
           
@@ -46,7 +46,7 @@ jobs:
         id: top-lang
         name: Download top languages file
         with:
-          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api/top-langs/?username=chetra-seng&hide=html,css,less,cmake,php,blade,scss,c%2B%2B&layout=compact&langs_count=6&hide_title=true&theme=default" 
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api/top-langs/?username=LeangHuy&hide=html,css,less,cmake,php,blade,scss,c%2B%2B&layout=compact&langs_count=6&hide_title=true&theme=default" 
           target: stats-dist
           filename: top-lang.svg
           
@@ -59,7 +59,7 @@ jobs:
         id: top-lang-dark
         name: Download top languages dark file
         with:
-          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api/top-langs/?username=chetra-seng&hide=html,css,less,cmake,php,blade,scss,c%2B%2B&layout=compact&langs_count=6&hide_title=true&theme=aura" 
+          url: "https://github-readme-stats-gules-gamma-14.vercel.app/api/top-langs/?username=LeangHuy&hide=html,css,less,cmake,php,blade,scss,c%2B%2B&layout=compact&langs_count=6&hide_title=true&theme=aura" 
           target: stats-dist
           filename: top-lang-dark.svg
           
