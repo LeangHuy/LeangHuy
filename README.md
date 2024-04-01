@@ -31,7 +31,7 @@
 ## GitHub's Stats
 
 <p align="center">
-    <a href="https://github.com/chetra-seng">
+    <a href="https://github.com/LeangHuy">
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chetra-seng/chetra-seng/stats-outputs/stats-dark.svg">
             <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chetra-seng/chetra-seng/stats-outputs/stats.svg">
