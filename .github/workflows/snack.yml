@@ -17,12 +17,11 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download external SVG file
-        run: curl -o dist/external.svg https://raw.githubusercontent.com/chetra-seng/chetra-seng/outputs/github-contribution-grid-snake.svg
+      
 
       - name: Push changes
         uses: ad-m/github-push-action@master
