@@ -18,14 +18,20 @@
     <a href="https://github.com/chetra-seng"><img src="https://komarev.com/ghpvc/?username=chetra-seng"><a/>
 </p>
 
-## About Me
+<p align="center">
+    <a href="https://github.com/LeangHuy"><img src="https://komarev.com/ghpvc/?username=LeangHuy"><a/>
+</p>
 
-- 👨🏻‍💻 Full-stack Developer
-- 🌱 Still learning Spring framework
-- 👯 Looking to collaborate on open source projects
-- 🍀 Trying to be productive and organized
-- ❌ I hate Angular
-- 💬 Ask me about anything
+<h2 align="center">⚒️ Languages-Skills ⚒️</h2>
+<br/>
+<div align="center">
+    <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,tailwind,github,git,vite,javascript" />
+    <img src="https://skillicons.dev/icons?i=java,cpp,php,laravel,mysql,spring,postgres,nextjs,prisma" />
+    <img src="https://skillicons.dev/icons?i=vscode,visualstudio,idea,eclipse,vercel,pnpm,npm,postman,notion" /><br>
+</div>
+
+<br/>
+<hr/>
 
 ## GitHub's Stats
 
