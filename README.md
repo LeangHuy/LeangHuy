@@ -22,7 +22,8 @@
 <br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,tailwind,vscode,github,git,vite,javascript" />
-    <img src="https://skillicons.dev/icons?i=java,js,cpp,php,laravel,spring" /><br>
+    <img src="https://skillicons.dev/icons?i=java,cpp,php,laravel,mysql,spring,postgres,nextjs,prisma" />
+    <img src="https://skillicons.dev/icons?i=vscode,visualstudio,idea,eclipse,vercel,pnpm,npm,postman,notion" /><br>
 </div>
 
 <br/>
