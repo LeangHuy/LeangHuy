@@ -7,9 +7,9 @@
 <p align="center">
     <a href="https://github.com/LeangHuy">
         <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chetra-seng/chetra-seng/outputs/github-contribution-grid-snake-dark.svg">
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chetra-seng/chetra-seng/outputs/github-contribution-grid-snake.svg">
-            <img alt="Github contribution grid snake animation" src="https://raw.githubusercontent.com/chetra-seng/chetra-seng/outputs/github-contribution-grid-snake-dark.svg">
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeangHuy/LeangHuy/outputs/github-contribution-grid-snake-dark.svg">
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LeangHuy/LeangHuy/outputs/github-contribution-grid-snake.svg">
+            <img alt="Github contribution grid snake animation" src="https://raw.githubusercontent.com/LeangHuy/LeangHuy/outputs/github-contribution-grid-snake-dark.svg">
         </picture>
     </a>
 </p>
