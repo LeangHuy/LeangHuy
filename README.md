@@ -45,4 +45,5 @@
             <img alt="Top Languages" src="https://raw.githubusercontent.com/LeangHuy/LeangHuy/stats-outputs/top-lang-dark.svg" width="48%" height="100%">
         </picture>
     </a>
+    <a href="https://github.com/LeangHuy"><img src="https://github-readme-streak-stats.herokuapp.com?user=LeangHuy&theme=tokyonight" alt="GitHub Streak" /></a>
 </p>
